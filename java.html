@@ -5,14 +5,15 @@
     <title>Page Title</title>
   </head>
   <body>
+
+    <button>Press me</button>
+
+
     <script>
       // Javascript goes here
-      console.log("Hello, World!")
+     
       // define the variable and assign the value
-     let admin, name;
-     name = "John";
-     admin = name;
-     alert( admin );
+    
      
      let ourPlanetName = "Earth";
      let currentUserName = "John";
@@ -33,8 +34,57 @@
      let actual = max - 13;
      let percentage = actual / max;
      console.log(percentage);
+
+     const string = 'The revolution will not be televised.';
+     console.log(string);
+
+     const badString = string;
+     console.log(badString);
+
+     const sgl = 'Single quotes.';
+     const dbl = "Double quotes";
+     console.log(sgl);
+     console.log(dbl);
+
+     const sglDbl = 'Would you eat a "fish supper"?';
+     const dblSgl = "I'm feeling blue.";
+     console.log(sglDbl);
+     console.log(dblSgl);
+
+     const bigmouth = 'I\'ve got not right to take my place...';
+     console.log(bigmouth);
+
+     const name = 'Chris';
+     const greeting = `Hello, ${name}`;
+     console.log(greeting); // "Hello, Chris";
+
+     const one = 'Hello, ';
+     const two = 'how are you?';
+     const joined = `${one}${two}`;
+     console.log(joined); // "Hello, how are you?"
+
      
 
+     const button = document.querySelector('button');
+     function greet() {
+       const name = prompt('What is your name?');
+       alert(`Hello ${name}, nice to see you!`);
+     }
+
+     button.addEventListener('click', greet);
+
+     const myString ='123';
+     const myNum = Number(myString);
+     console.log(typeof myNum);
+
+     const myNum2 = 123;
+     const myString2 = myNum2.toString();
+     console.log(typeof myString2);
+
+
     </script>
+
+
+
   </body>
 </html>
